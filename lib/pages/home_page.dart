@@ -12,23 +12,23 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget> myTabs = [
     //donut tab//
-    const mytab(
+    const Mytab(
       iconPath: "lib/icons/donut.png"
       ),
     //burgerTab//
-      const mytab(
+      const Mytab(
       iconPath: "lib/icons/burger.png"
       ),
     //Smoothietab//
-      const mytab(
+      const Mytab(
       iconPath: "lib/icons/smoothie.png"
       ),
     //pancake tab//
-      const mytab(
+      const Mytab(
       iconPath: "lib/icons/pancakes.png"
       ),
     //pizzatab//
-    const mytab(
+    const Mytab(
       iconPath: "lib/icons/pizza.png"
       ),
   ];
