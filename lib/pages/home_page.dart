@@ -58,8 +58,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               children: [
                 Text("I want to",style: TextStyle(fontSize: 24)),
-                Text(
-                  "eat",
+                Text(" eat",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 )
             ],
