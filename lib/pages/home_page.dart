@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/my_tab.dart';
-import '../utils/my_tab.dart';
 
 import '../tab/burger_tab.dart';
 import '../tab/donut_tab.dart';
@@ -19,13 +18,13 @@ List<Widget> myTabs =[
   //donut tab
    const MyTab(iconPath: 'lib/icons/donut.png',),
   //burger tab
-   const Mytab(iconPath: 'lib/icons/burger.png',),
+   const MyTab(iconPath: 'lib/icons/burger.png',),
   //smothie tab
-  const Mytab(iconPath: 'lib/icons/smoothie.png'),
+  const MyTab(iconPath: 'lib/icons/smoothie.png'),
   //pizza tab
-  const Mytab(iconPath: 'lib/icons/pizza.png',),
+  const MyTab(iconPath: 'lib/icons/pizza.png',),
    //pancakes
-  const Mytab(iconPath: 'lib/icons/pancakes.png',) 
+  const MyTab(iconPath: 'lib/icons/pancakes.png',) 
 ];
 class _HomePageState extends State<HomePage> {
   @override
