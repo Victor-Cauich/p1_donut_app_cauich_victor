@@ -18,7 +18,7 @@ const DonutTab({super.key});
     // delegate sirve para organizar los widgets en la cuadricula
     return GridView.builder(
       itemCount: donutsOnSale.length,
-      padding: const EdgeInsets.all(12),      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1/1.5),
+      padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1/1.5),
      itemBuilder: (context, index){
       return DonutTile(
         donutFlavor: donutsOnSale[index][0],
