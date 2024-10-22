@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-class DonutTile extends StatelessWidget {
-  final String donutFlavor;
-  final String donutPrice;
-  final dynamic donutColor; //dynamic porque sera de tipo color
-  final String imageName;
+class SmoothieTile extends StatelessWidget {
+  final String smoothieFlavor;
+  final String smoothiePrice;
+  final dynamic smoothieColor; //dynamic porque sera de tipo color
+  final String imageSmoothie;
 
-const DonutTile(
+const SmoothieTile(
   {super.key,
-  required this.donutFlavor,
-  required this.donutPrice,
-  this.donutColor,
-  required this.imageName});
+  required this.smoothieFlavor,
+  required this.smoothiePrice,
+  this.smoothieColor,
+  required this.imageSmoothie});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(12),
       child: Container(
-        decoration: BoxDecoration(color: donutColor[50], borderRadius: BorderRadius.circular(24)),
+        decoration: BoxDecoration(color: smoothieColor[50], borderRadius: BorderRadius.circular(24)),
         child: Column(
           children: [
           Row(
@@ -26,18 +26,18 @@ const DonutTile(
             children: [
               Container(
               decoration: BoxDecoration(
-              color: donutColor[100],
+              color: smoothieColor[100],
               borderRadius: const BorderRadius.only(
                 topRight: Radius.circular(24),
                 bottomLeft: Radius.circular(24))),
             padding:
                 const EdgeInsets.symmetric(vertical: 8, horizontal: 18),
             child: Text(
-            donutPrice,
+            smoothiePrice,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: donutColor[800],
+                    color: smoothieColor[800],
                   ),
                 ),
         ),
@@ -47,18 +47,18 @@ const DonutTile(
             Padding(
              padding: 
              const EdgeInsets.symmetric(horizontal:40, vertical:17),
-             child: Image.asset(imageName),
+             child: Image.asset(imageSmoothie),
         ),
 
             //Donut flavor text
             Text(
-              donutFlavor,
+              smoothieFlavor,
               style: 
               const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)
               ),
 
                 Text(
-                  "Dunkis",
+                  "Dunkins",
                   style: TextStyle(color: Colors.grey[600]),
                 ),
 
