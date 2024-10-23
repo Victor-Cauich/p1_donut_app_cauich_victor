@@ -5,14 +5,14 @@ class BurgerTab extends StatelessWidget {
 // list of burgers
 final List burgersOnSale = const[
 // [ donutFlavor, donutPrice, donutColor, imageName ]
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
+["Double", "150", Colors.blue, "lib/images/burguer.png"],
+["Combo", "130", Colors.red, "lib/images/hamburguesa.png"],
+["Simple Combo", "95", Colors.purple, "lib/images/hamburguesa6.png"],
+["Normal", "55", Colors.brown, "lib/images/hamburguesa1.png"],
+["Deluxe", "120", Colors.blue, "lib/images/hamburguesa2.png"],
+["Big", "110", Colors.red, "lib/images/hamburguesa3.png"],
+["Vegan", "95", Colors.purple, "lib/images/hamburguesa4.png"],
+["Junior", "40", Colors.brown, "lib/images/hamburguesa5.png"],
 ];
  
 const BurgerTab({super.key});

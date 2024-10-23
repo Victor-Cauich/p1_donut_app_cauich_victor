@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               // Mostrar cantidad de artículos y precio total
               const Text (
-                'hola',
+                '  Items    l     Price: ',
                 style: TextStyle(
                     fontWeight: FontWeight.bold, fontSize: 18,),
               ),

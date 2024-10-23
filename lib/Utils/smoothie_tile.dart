@@ -33,7 +33,7 @@ const SmoothieTile(
             padding:
                 const EdgeInsets.symmetric(vertical: 8, horizontal: 18),
             child: Text(
-            smoothiePrice,
+            '\$$smoothiePrice',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ const SmoothieTile(
               ),
 
                 Text(
-                  "Dunkins",
+                  "Smooths",
                   style: TextStyle(color: Colors.grey[600]),
                 ),
 

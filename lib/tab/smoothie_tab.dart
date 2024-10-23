@@ -5,14 +5,14 @@ class SmoothieTab extends StatelessWidget {
   // list of smoothies
 final List smoothiesOnSale = const[
 // [ smoothieFlavor, smoothiePrice, smoothieColor, imageSmoothie ]
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
+["Special", "36", Colors.blue, "lib/images/smoothie1.png"],
+["Healthy", "45", Colors.red, "lib/images/smoothie2.png"],
+["Strawberry", "26", Colors.purple, "lib/images/smoothie3.png"],
+["Grape", "35", Colors.brown, "lib/images/smoothie4.png"],
+["Watermelon", "50", Colors.blue, "lib/images/smoothie5.png"],
+["Banana", "25", Colors.red, "lib/images/smoothie6.png"],
+["Blueberry", "45", Colors.purple, "lib/images/smoothie7.png"],
+["Coco", "36", Colors.brown, "lib/images/smoothie8.png"],
 ];
 const SmoothieTab({super.key});
 

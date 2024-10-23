@@ -33,7 +33,7 @@ const DonutTile(
             padding:
                 const EdgeInsets.symmetric(vertical: 8, horizontal: 18),
             child: Text(
-            donutPrice,
+            '\$$donutPrice',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,

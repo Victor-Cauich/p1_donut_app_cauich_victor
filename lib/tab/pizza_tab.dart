@@ -5,14 +5,14 @@ class PizzaTab extends StatelessWidget {
   // list of pizzas
 final List pizzasOnSale = const[
 // [ pizzaFlavor, pizzaPrice, pizzaColor, imagePizza ]
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
+["Mushroom", "85", Colors.blue, "lib/images/pizza.png"],
+["Special", "70", Colors.red, "lib/images/pizza2.png"],
+["Vegan", "84", Colors.purple, "lib/images/pizza3.png"],
+["Triple Chesse", "95", Colors.brown, "lib/images/pizza4.png"],
+["Peperoni", "85", Colors.blue, "lib/images/pizza5.png"],
+["Deluxe", "120", Colors.red, "lib/images/pizza6.png"],
+["Peperoni slide", "25", Colors.purple, "lib/images/pizza7.png"],
+["Deluxe slide", "35", Colors.brown, "lib/images/pizza8.png"],
 ];
 const PizzaTab({super.key});
 

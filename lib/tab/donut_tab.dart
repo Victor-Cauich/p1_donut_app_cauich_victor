@@ -8,13 +8,14 @@ final List donutsOnSale = const[
 ["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
 ["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
 ["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
+["Choco Chips", "95", Colors.brown, "lib/images/chocolate_donut.png"],
+["Choco", "20", Colors.blue, "lib/images/donas.png"],
+["Special", "110", Colors.red, "lib/images/rosquilla2.png"],
+["Chips", "75", Colors.purple, "lib/images/rosquilla3.png"],
+["Vainilla", "90", Colors.brown, "lib/images/rosquilla.png"],
 
 ];
+
  
 const DonutTab({super.key});
 

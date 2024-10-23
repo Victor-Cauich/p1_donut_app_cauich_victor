@@ -5,14 +5,14 @@ class PancakesTab extends StatelessWidget {
 // list of pancakes
 final List pancakesOnSale = const[
 // [ pancakeFlavor, pancakePrice, pancakeColor, imagePancake ]
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
-["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
+["Normal", "36", Colors.blue, "lib/images/pancake1.png"],
+["Peach", "45", Colors.red, "lib/images/pancake2.png"],
+["Strawberry", "40", Colors.purple, "lib/images/pancake3.png"],
+["Vegan", "65", Colors.brown, "lib/images/pancake4.png"],
+["blueberry", "45", Colors.blue, "lib/images/pancake5.png"],
+["butter", "35", Colors.red, "lib/images/pancake6.png"],
+["Choco", "50", Colors.purple, "lib/images/pancake7.png"],
+["Ice Cream", "80", Colors.brown, "lib/images/pancake8.png"],
 ];
 const PancakesTab({super.key});
 

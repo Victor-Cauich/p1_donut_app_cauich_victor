@@ -33,7 +33,7 @@ const PizzaTile(
             padding:
                 const EdgeInsets.symmetric(vertical: 8, horizontal: 18),
             child: Text(
-            pizzaPrice,
+            '\$$pizzaPrice',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ const PizzaTile(
               ),
 
                 Text(
-                  "Dunkins",
+                  "Dominos",
                   style: TextStyle(color: Colors.grey[600]),
                 ),
 

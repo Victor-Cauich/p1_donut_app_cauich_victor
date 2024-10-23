@@ -33,7 +33,7 @@ const BurgerTile(
             padding:
                 const EdgeInsets.symmetric(vertical: 8, horizontal: 18),
             child: Text(
-            burgerPrice,
+            '\$$burgerPrice',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ const BurgerTile(
               ),
 
                 Text(
-                  "Dunkins",
+                  "McDonalds",
                   style: TextStyle(color: Colors.grey[600]),
                 ),
 
