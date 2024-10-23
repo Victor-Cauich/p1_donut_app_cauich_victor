@@ -71,7 +71,39 @@ class _HomePageState extends State<HomePage> {
         ])
         ),
        ],),
-       ),
-    ); //Icon       
+
+// inicio nuevo codigo
+
+// Barra inferior
+        bottomNavigationBar: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          color: Colors.grey[200],
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              // Mostrar cantidad de artículos y precio total
+              const Text (
+                'hola',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, fontSize: 18,),
+              ),
+              // Botón para ver el carrito
+              ElevatedButton(
+                onPressed: () {
+                  // Lógica para ver el carrito
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink,
+                ),
+                child: const Text("View Cart"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
+
+
+//fin nuevo codigo
