@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/pizza_tile.dart';
 
 class PizzaTab extends StatelessWidget {
+  final Function(double) onItemAdded;
+
   // list of pizzas
 final List pizzasOnSale = const[
 // [ pizzaFlavor, pizzaPrice, pizzaColor, imagePizza ]
@@ -14,7 +16,7 @@ final List pizzasOnSale = const[
 ["Peperoni slide", "25", Colors.purple, "lib/images/pizza7.png"],
 ["Deluxe slide", "35", Colors.brown, "lib/images/pizza8.png"],
 ];
-const PizzaTab({super.key});
+const PizzaTab({super.key, required this.onItemAdded});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,9 @@ const PizzaTab({super.key});
         pizzaPrice: pizzasOnSale[index][1],
         pizzaColor: pizzasOnSale[index][2],
         imagePizza: pizzasOnSale[index][3],
+        onAdd: () {
+          onItemAdded(double.parse(pizzasOnSale[index][1]));
+        }
       );
       });
   }

@@ -5,13 +5,15 @@ class PancakeTile extends StatelessWidget {
   final String pancakePrice;
   final dynamic pancakeColor; //dynamic porque sera de tipo color
   final String imagePancake;
+  final VoidCallback onAdd;
 
 const PancakeTile(
   {super.key,
   required this.pancakeFlavor,
   required this.pancakePrice,
   this.pancakeColor,
-  required this.imagePancake});
+  required this.imagePancake,
+  required this.onAdd});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,10 @@ const PancakeTile(
                 //love icon
                 Icon(Icons.favorite, color: Colors.pink[400]),
                  //Plus buttom
-                Icon(Icons.add, color: Colors.grey[800]),
+                IconButton(
+                  icon: Icon(Icons.add, color: Colors.grey[800]),
+                  onPressed: onAdd, // Llamar al método para añadir el item
+                  ),
               ],
 
         ))],

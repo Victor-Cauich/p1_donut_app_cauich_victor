@@ -5,13 +5,16 @@ class BurgerTile extends StatelessWidget {
   final String burgerPrice;
   final dynamic burgerColor; //dynamic porque sera de tipo color
   final String imageBurger;
+  final VoidCallback onAdd;
 
 const BurgerTile(
   {super.key,
   required this.burgerFlavor,
   required this.burgerPrice,
   this.burgerColor,
-  required this.imageBurger});
+  required this.imageBurger,
+  required this.onAdd
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +74,10 @@ const BurgerTile(
                 //love icon
                 Icon(Icons.favorite, color: Colors.pink[400]),
                  //Plus buttom
-                Icon(Icons.add, color: Colors.grey[800]),
+                 IconButton(
+                 icon: Icon(Icons.add, color: Colors.grey[800]),
+                 onPressed: onAdd,
+                 ),
               ],
 
         ))],

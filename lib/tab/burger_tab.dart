@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/burger_tile.dart';
 
 class BurgerTab extends StatelessWidget {
+  final Function(double) onItemAdded;
+
 // list of burgers
 final List burgersOnSale = const[
 // [ donutFlavor, donutPrice, donutColor, imageName ]
@@ -15,7 +17,7 @@ final List burgersOnSale = const[
 ["Junior", "40", Colors.brown, "lib/images/hamburguesa5.png"],
 ];
  
-const BurgerTab({super.key});
+const BurgerTab({super.key, required this.onItemAdded});
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,9 @@ const BurgerTab({super.key});
         burgerPrice: burgersOnSale[index][1],
         burgerColor: burgersOnSale[index][2],
         imageBurger: burgersOnSale[index][3],
+        onAdd: () {
+          onItemAdded(double.parse(burgersOnSale[index][1]));
+        }
       );
       });
   }

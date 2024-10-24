@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/pancake_tile.dart';
 
 class PancakesTab extends StatelessWidget {
+  final Function(double) onItemAdded;
 // list of pancakes
 final List pancakesOnSale = const[
 // [ pancakeFlavor, pancakePrice, pancakeColor, imagePancake ]
@@ -14,7 +15,7 @@ final List pancakesOnSale = const[
 ["Choco", "50", Colors.purple, "lib/images/pancake7.png"],
 ["Ice Cream", "80", Colors.brown, "lib/images/pancake8.png"],
 ];
-const PancakesTab({super.key});
+const PancakesTab({super.key, required this.onItemAdded});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,9 @@ const PancakesTab({super.key});
         pancakePrice: pancakesOnSale[index][1],
         pancakeColor: pancakesOnSale[index][2],
         imagePancake: pancakesOnSale[index][3],
+        onAdd: () {
+          onItemAdded(double.parse(pancakesOnSale[index][1]));
+        }
       );
       });
   }

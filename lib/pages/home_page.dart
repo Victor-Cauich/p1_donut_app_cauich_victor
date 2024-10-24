@@ -26,7 +26,21 @@ List<Widget> myTabs =[
    //pancakes
   const MyTab(iconPath: 'lib/icons/pizza.png',) 
 ];
+
 class _HomePageState extends State<HomePage> {
+
+  int totalItems = 0;
+  double totalPrice = 0.0;
+
+// añadir un articulo al carrito
+void addItem(double price){
+  setState(() {
+    totalItems++;
+    totalPrice += price;
+    });
+   }
+
+
   @override
   Widget build(BuildContext context) {
     return  DefaultTabController( 
@@ -61,13 +75,13 @@ class _HomePageState extends State<HomePage> {
         //tab bar
         TabBar(tabs:myTabs),
         //tab bar view
-        const Expanded(
+        Expanded(
           child: TabBarView(children: [
-         DonutTab(),
-         BurgerTab(),
-         SmoothieTab(),
-         PancakesTab(),
-         PizzaTab()
+         DonutTab(onItemAdded: addItem),
+         BurgerTab(onItemAdded: addItem),
+         SmoothieTab(onItemAdded: addItem),
+         PancakesTab(onItemAdded: addItem),
+         PizzaTab(onItemAdded: addItem),
         ])
         ),
        ],),
@@ -82,9 +96,9 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // Mostrar cantidad de artículos y precio total
-              const Text (
-                '  Items    l     Price: ',
-                style: TextStyle(
+              Text (
+                '$totalItems Items    l    Price: \$${totalPrice.toStringAsFixed(2)}',
+                style: const TextStyle(
                     fontWeight: FontWeight.bold, fontSize: 18,),
               ),
               // Botón para ver el carrito

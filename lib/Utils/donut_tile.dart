@@ -5,13 +5,15 @@ class DonutTile extends StatelessWidget {
   final String donutPrice;
   final dynamic donutColor; //dynamic porque sera de tipo color
   final String imageName;
+  final VoidCallback onAdd;
 
 const DonutTile(
   {super.key,
   required this.donutFlavor,
   required this.donutPrice,
   this.donutColor,
-  required this.imageName});
+  required this.imageName,
+  required this.onAdd});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,11 @@ const DonutTile(
                 //love icon
                 Icon(Icons.favorite, color: Colors.pink[400]),
                  //Plus buttom
-                Icon(Icons.add, color: Colors.grey[800]),
+                 IconButton(
+                icon: Icon(Icons.add, color: Colors.grey[800]),
+                onPressed: onAdd,
+
+                 ),
               ],
               
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/smoothie_tile.dart';
 
 class SmoothieTab extends StatelessWidget {
+  final Function(double) onItemAdded;
+
   // list of smoothies
 final List smoothiesOnSale = const[
 // [ smoothieFlavor, smoothiePrice, smoothieColor, imageSmoothie ]
@@ -14,7 +16,7 @@ final List smoothiesOnSale = const[
 ["Blueberry", "45", Colors.purple, "lib/images/smoothie7.png"],
 ["Coco", "36", Colors.brown, "lib/images/smoothie8.png"],
 ];
-const SmoothieTab({super.key});
+const SmoothieTab({super.key, required this.onItemAdded});
 
   @override
 Widget build(BuildContext context) {
@@ -28,6 +30,9 @@ Widget build(BuildContext context) {
         smoothiePrice: smoothiesOnSale[index][1],
         smoothieColor: smoothiesOnSale[index][2],
         imageSmoothie: smoothiesOnSale[index][3],
+        onAdd: () {
+          onItemAdded(double.parse(smoothiesOnSale[index][1]));
+        }
       );
       });
   }

@@ -5,13 +5,15 @@ class PizzaTile extends StatelessWidget {
   final String pizzaPrice;
   final dynamic pizzaColor; //dynamic porque sera de tipo color
   final String imagePizza;
+  final VoidCallback onAdd;
 
 const PizzaTile(
   {super.key,
   required this.pizzaFlavor,
   required this.pizzaPrice,
   this.pizzaColor,
-  required this.imagePizza});
+  required this.imagePizza,
+  required this.onAdd});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,10 @@ const PizzaTile(
                 //love icon
                 Icon(Icons.favorite, color: Colors.pink[400]),
                  //Plus buttom
-                Icon(Icons.add, color: Colors.grey[800]),
+                IconButton(
+                  icon: Icon(Icons.add, color: Colors.grey[800]),
+                  onPressed: onAdd, // Llamar al método para añadir el item
+                  ),
               ],
 
         ))],

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:p1_donut_app_cauich_victor/Utils/donut_tile.dart';
 
 class DonutTab extends StatelessWidget {
+  final Function(double) onItemAdded;
+
 // list of donuts
 final List donutsOnSale = const[
 // [ donutFlavor, donutPrice, donutColor, imageName ]
@@ -17,7 +19,7 @@ final List donutsOnSale = const[
 ];
 
  
-const DonutTab({super.key});
+const DonutTab({super.key, required this.onItemAdded});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,11 @@ const DonutTab({super.key});
         donutPrice: donutsOnSale[index][1],
         donutColor: donutsOnSale[index][2],
         imageName: donutsOnSale[index][3],
+        onAdd: () {
+          onItemAdded(double.parse(donutsOnSale[index][1]));
+        }
       );
-      });
+     }
+    );
   }
 }

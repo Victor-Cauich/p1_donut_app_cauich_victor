@@ -5,13 +5,15 @@ class SmoothieTile extends StatelessWidget {
   final String smoothiePrice;
   final dynamic smoothieColor; //dynamic porque sera de tipo color
   final String imageSmoothie;
+  final VoidCallback onAdd;
 
 const SmoothieTile(
   {super.key,
   required this.smoothieFlavor,
   required this.smoothiePrice,
   this.smoothieColor,
-  required this.imageSmoothie});
+  required this.imageSmoothie,
+  required this.onAdd});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,10 @@ const SmoothieTile(
                 //love icon
                 Icon(Icons.favorite, color: Colors.pink[400]),
                  //Plus buttom
-                Icon(Icons.add, color: Colors.grey[800]),
+                IconButton(
+                  icon: Icon(Icons.add, color: Colors.grey[800]),
+                  onPressed: onAdd, // Llamar al método para añadir el item
+                  ),
               ],
 
         ))],
